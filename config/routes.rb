@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   root 'desktop#index'
 
+  resources :desktop do
+    collection do
+      get :guest
+    end
+  end
+
 
   authenticate :user, lambda { |u| u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
