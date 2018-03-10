@@ -3,15 +3,15 @@ class DesktopController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :guest]
 
   def index
-    unless current_user
-      redirect_to :action => :guest and return
+    if current_user
+      redirect_to :action => :home and return
     end
-
   end
 
 
-  def guest
+  def home
 
   end
+
 
 end

@@ -1,0 +1,6 @@
+<%= render partial: 'shared/desktop_nav' %>
+
+<div id="content-div" class="<%= 'top-nav-visible'%>">
+  <%= render :partial => 'shared/alerts' %>
+  <%= yield %>
+</div>

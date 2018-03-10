@@ -1,0 +1,28 @@
+
+<div class="row" id="merch-nav">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs nav-justified"
+        ic-push-url="true"
+        ic-target="#main-body"
+        sb-progress-bar="true">
+      <li class="<%=active_if(:controller => :collections)%>" role="presentation">
+        <a ic-get-from="/collections">
+          Collections
+          <i class="ic-indicator fa fa-spinner fa-spin" style="display:none"></i>
+        </a>
+      </li>
+      <li class="<%=active_if(:controller => :subscriptions)%>" role="presentation">
+        <a ic-get-from="/subscriptions">
+          Subscribers
+          <i class="ic-indicator fa fa-spinner fa-spin" style="display:none"></i>
+        </a>
+      </li>
+      <li class="<%=active_if(:controller => :settings)%>" role="presentation">
+        <a ic-get-from="/settings">
+          Settings
+          <i class="ic-indicator fa fa-spinner fa-spin" style="display:none"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

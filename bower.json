@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "intercooler-js" : "1.2.1"
+    "intercooler-js" : "1.2.1",
+    "remarkable-bootstrap-notify": "3.1.3"
   }
 }

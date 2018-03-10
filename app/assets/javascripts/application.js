@@ -1,4 +1,7 @@
-//= require rails-ujs
+//= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require remarkable-bootstrap-notify/bootstrap-notify
 //= require intercooler-js/src/intercooler
 //= require_tree .
 
@@ -45,10 +48,10 @@ var AuraApp = (function() {
 
 Intercooler.ready(function(elt) {
 
-    var sortable = elt.find('.sortable');
-    if (sortable[0]) {
-        Sortable.create(sortable[0]);
-    }
+    // var sortable = elt.find('.sortable');
+    // if (sortable[0]) {
+    //     Sortable.create(sortable[0]);
+    // }
 
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();

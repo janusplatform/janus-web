@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :desktop do
     collection do
-      get :guest
+      get :home
     end
   end
 
