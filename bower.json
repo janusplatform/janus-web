@@ -17,5 +17,6 @@
     "tests"
   ],
   "dependencies": {
+    "intercooler-js" : "1.2.1"
   }
 }

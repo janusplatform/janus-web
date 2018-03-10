@@ -1,0 +1,9 @@
+<% if notice %>
+  <script>AuraApp.showInfo("<%= notice %>");</script>
+<% end %>
+
+<% if alert %>
+  <script>AuraApp.showError("<%= alert %>");</script>
+<% end %>
+
+<% flash.clear  %>
