@@ -1,0 +1,18 @@
+---
+:verbose: true
+:concurrency: 5
+:pidfile: tmp/pids/sidekiq.pid
+staging:
+  :concurrency: 5
+production:
+  :concurrency: 25
+:queues:
+  - [critical, 5]
+  - [default, 2]
+  - [slow, 1]
+  - [mailers, 1]
+:process_limits:
+  critical: 25
+  default: 20
+  slow: 10
+  mailers: 10

@@ -1,0 +1,21 @@
+{
+  "name": "auro-app",
+  "homepage": "https://www.github.com/machadolab/aura-app",
+  "authors": [
+    "Mike Machado <mike@machadolab.com>"
+  ],
+  "description": "Auro Web App",
+  "main": "",
+  "moduleType": [],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
