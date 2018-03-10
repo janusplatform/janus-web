@@ -1,6 +1,6 @@
 class DesktopController < ApplicationController
 
-  before_action :authenticate_user!, :except => [:index, :guest]
+  before_action :authenticate_user!, :except => [:index]
 
   def index
     if current_user

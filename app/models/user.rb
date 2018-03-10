@@ -1,4 +1,4 @@
-class User
+class User < ApplicationRecord
   include Mongoid::Document
   include Mongoid::Timestamps
 
@@ -40,6 +40,8 @@ class User
   # field :locked_at,       type: Time
 
   field :admin, type: Boolean, default: false
+
+  field :name, type: String
 
   field :status, type: Symbol, default: STATUS_ACTIVE
   field :settings, type: Hash, default: {}
