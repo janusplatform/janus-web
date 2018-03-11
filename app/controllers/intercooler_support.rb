@@ -69,11 +69,11 @@ class IntercoolerSupport
   end
 
   def flash_alert(str)
-    trigger('aura.flash.alert', str)
+    trigger('app.flash.alert', str)
   end
 
   def flash_notice(str)
-    trigger('aura.flash.notice', str)
+    trigger('app.flash.notice', str)
   end
 
   def after_request

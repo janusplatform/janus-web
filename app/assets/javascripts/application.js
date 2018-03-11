@@ -7,7 +7,7 @@
 
 
 
-var AuraApp = (function() {
+var App = (function() {
 
     return {
 
@@ -62,7 +62,7 @@ Intercooler.ready(function(elt) {
 $(function() {
 
     $('body').on("beforeSend.ic", function(evt, elt, data, textStatus, xhr, requestId){
-        if(Intercooler.closestAttrValue(elt, 'aura-progress-bar') == "true") {
+        if(Intercooler.closestAttrValue(elt, 'app-progress-bar') == "true") {
             $("#ajax-progress").find('div.progress-bar').remove();
             $("#ajax-progress").html('<div id="req-' + requestId  + '-indicator" class="progress-bar" style="width: 0"></div>');
             setTimeout(function(){
@@ -80,10 +80,10 @@ $(function() {
     });
 
     // AJAX alert events
-    $('body').on('aura.flash.notice', function(evt, val){
-        AuraApp.showInfo(val);
-    }).on('aura.flash.alert', function(evt, val){
-        AuraApp.showError(val);
+    $('body').on('app.flash.notice', function(evt, val){
+        App.showInfo(val);
+    }).on('app.flash.alert', function(evt, val){
+        App.showError(val);
     });
 
 });

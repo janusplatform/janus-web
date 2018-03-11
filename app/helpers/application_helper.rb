@@ -95,7 +95,7 @@ module ApplicationHelper
   end
 
 
-  def aura_error_span(record, field)
+  def app_error_span(record, field)
     raw('<span class="text-danger">' +  record.errors[field].join(", ")  + '</span>') unless record.errors[field].blank?
   end
 
