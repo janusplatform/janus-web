@@ -1,10 +1,10 @@
 {
-  "name": "auro-app",
-  "homepage": "https://www.github.com/machadolab/aura-app",
+  "name": "janus-web",
+  "homepage": "http://www.janusplatform.org",
   "authors": [
     "Mike Machado <mike@machadolab.com>"
   ],
-  "description": "Auro Web App",
+  "description": "Janus Web Interface",
   "main": "",
   "moduleType": [],
   "license": "GPLv3",
